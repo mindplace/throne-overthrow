@@ -40,9 +40,7 @@ $(document).ready(function(){
     }).done(function(response) {
       var id = e.target.parentElement.getAttribute("id")
       if (data.indexOf('Question') >= 0) {
-        debugger;
-        // $(target.parent()).append(response);
-        console.log(target)
+
         $('#question-comments-container').append(response);
       }
       else {
@@ -57,7 +55,6 @@ $(document).ready(function(){
     var type = target.method;
     var url = target.action;
     var data = $(target).serialize();
-    debugger;
 
     $.ajax({
       type: type,

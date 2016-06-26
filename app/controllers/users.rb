@@ -14,7 +14,7 @@ post '/users' do
 end
 
 get '/users/:id' do
-  if current_user.id == params[:id].to_i
+  if current_user && current_user.id == params[:id].to_i
     @questions = current_user.questions
     @quote = User.get_quote
     erb :'/users/show'

@@ -1,19 +1,10 @@
-### update your local repo
-- git checkout master
-- git pull origin master
+## Throne Overthrow
+A Game Of Thrones-inspired StackOverflow clone.
+Built on Sinatra as a Dev Bootcamp group project.
 
-### make changes
-- git checkout -b 'feature'
-- *make changes*
-- *add*
-- *commit*
-
-### reupdate local repo
-- git checkout master
-- git pull origin master
-
-### push your changes
-- git checkout 'feature'
-- git rebase master *OR* git merge master
-- git push origin 'feature'
-- **make a pull request**
+My contributions:
+- user authentication
+- visual layout
+- user profile page and view logic
+- question show page layout
+- involvement in database structure, models, and controllers
